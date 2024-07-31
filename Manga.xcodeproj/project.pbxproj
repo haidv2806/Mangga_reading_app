@@ -11,6 +11,9 @@
 		0843ACF62C5A260200991389 /* FavIistIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACF52C5A260200991389 /* FavIistIcon.swift */; };
 		0843ACF92C5A266200991389 /* FavIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACF82C5A266200991389 /* FavIcon.swift */; };
 		0843ACFB2C5A347900991389 /* ColorForHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACFA2C5A347900991389 /* ColorForHex.swift */; };
+		0843ACFF2C5A3C6F00991389 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACFE2C5A3C6F00991389 /* UserPost.swift */; };
+		0843AD012C5A3FDA00991389 /* PaddingPosistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD002C5A3FDA00991389 /* PaddingPosistion.swift */; };
+		0843AD032C5A480400991389 /* UserPostLlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD022C5A480400991389 /* UserPostLlist.swift */; };
 		B403487E2A16380500621574 /* SplitNumberVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403487D2A16380500621574 /* SplitNumberVote.swift */; };
 		B40EE1192A1CC23000B17E78 /* VisualBlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */; };
 		B40EE1222A1E014800B17E78 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1212A1E014800B17E78 /* View.swift */; };
@@ -56,6 +59,9 @@
 		0843ACF52C5A260200991389 /* FavIistIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavIistIcon.swift; sourceTree = "<group>"; };
 		0843ACF82C5A266200991389 /* FavIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavIcon.swift; sourceTree = "<group>"; };
 		0843ACFA2C5A347900991389 /* ColorForHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorForHex.swift; sourceTree = "<group>"; };
+		0843ACFE2C5A3C6F00991389 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
+		0843AD002C5A3FDA00991389 /* PaddingPosistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingPosistion.swift; sourceTree = "<group>"; };
+		0843AD022C5A480400991389 /* UserPostLlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostLlist.swift; sourceTree = "<group>"; };
 		B403487D2A16380500621574 /* SplitNumberVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitNumberVote.swift; sourceTree = "<group>"; };
 		B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurEffectView.swift; sourceTree = "<group>"; };
 		B40EE1212A1E014800B17E78 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 		0843ACF42C5A25D700991389 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				0843ACFD2C5A3C3900991389 /* Post */,
 				0843ACF72C5A263B00991389 /* Favorite */,
 			);
 			path = User;
@@ -141,6 +148,15 @@
 			path = "custom Font";
 			sourceTree = "<group>";
 		};
+		0843ACFD2C5A3C3900991389 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				0843ACFE2C5A3C6F00991389 /* UserPost.swift */,
+				0843AD022C5A480400991389 /* UserPostLlist.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		B403487C2A1637F000621574 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +168,7 @@
 				F5B98C9E2A2DC6BC00FAA867 /* PageControl.swift */,
 				F5B505DF2A347D6E00ADACF4 /* RequestParam.swift */,
 				0843ACFA2C5A347900991389 /* ColorForHex.swift */,
+				0843AD002C5A3FDA00991389 /* PaddingPosistion.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -363,8 +380,11 @@
 				F5B98CA12A302A9700FAA867 /* GridView.swift in Sources */,
 				B4EDF13E2A08F4CA00A51952 /* ErrorResponse.swift in Sources */,
 				F51EBD1C29F0CCD7006485D4 /* MangaApp.swift in Sources */,
+				0843ACFF2C5A3C6F00991389 /* UserPost.swift in Sources */,
+				0843AD032C5A480400991389 /* UserPostLlist.swift in Sources */,
 				B4D6CAAB2A25E9B800DFB7F2 /* Category.swift in Sources */,
 				F5B505E02A347D6E00ADACF4 /* RequestParam.swift in Sources */,
+				0843AD012C5A3FDA00991389 /* PaddingPosistion.swift in Sources */,
 				B43C84752A08D85A009B1810 /* CustomCorner.swift in Sources */,
 				B43C84792A08D8A2009B1810 /* MangaDetailState.swift in Sources */,
 				F5B98B5D2A26F01200FAA867 /* MangaChapter.swift in Sources */,
