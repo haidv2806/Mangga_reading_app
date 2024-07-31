@@ -10,13 +10,24 @@ import SwiftUI
 struct TaskBar: View {
     var body: some View {
         HStack (spacing: 50){
-            Image(systemName: "house.fill")
-            Image(systemName: "list.clipboard")
-            Image(systemName: "bookmark")
-            Image("UserImg")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 60)
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Image(systemName: "house.fill")
+            })
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Image(systemName: "list.clipboard")
+            })
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Image(systemName: "bookmark")
+            })
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Image("UserImg")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 60)
+            })
+
+
+
         }
         .font(.largeTitle)
         .frame(height: 100)
