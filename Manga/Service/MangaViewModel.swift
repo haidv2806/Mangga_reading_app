@@ -18,28 +18,28 @@ final class MangaViewModel: ObservableObject {
     @Published var hasError: Bool = false
     
     var request: URLRequest = {
-        let baseURL = "http://14.225.7.221:1983"
+        let baseURL = "https://manga.gachmen.org"
         let urlString = "\(baseURL)/homenelo"
         let url = URL(string: urlString)!
         return URLRequest(url: url)
     }()
     
     var detailRequest: URLRequest = {
-        let baseURL = "http://14.225.7.221:1983"
+        let baseURL = "https://manga.gachmen.org"
         let urlString = "\(baseURL)/detailmanga"
         let url = URL(string: urlString)!
         return URLRequest(url: url)
     }()
 
 	var chapterRequest: URLRequest = {
-		let baseURL = "http://14.225.7.221:1983"
+		let baseURL = "https://manga.gachmen.org"
 		let urlString = "\(baseURL)/chapter"
 		let url = URL(string: urlString)!
 		return URLRequest(url: url)
 	}()
 
 	var categoryRequest: URLRequest = {
-		let baseURL = "http://14.225.7.221:1983"
+		let baseURL = "https://manga.gachmen.org"
 		let urlString = "\(baseURL)/categorieslist"
 		let url = URL(string: urlString)!
 		return URLRequest(url: url)

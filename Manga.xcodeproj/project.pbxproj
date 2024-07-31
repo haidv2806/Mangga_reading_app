@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0843ACF22C5A1F3A00991389 /* TaskBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACF12C5A1F3A00991389 /* TaskBar.swift */; };
+		0843ACF62C5A260200991389 /* FavIistIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACF52C5A260200991389 /* FavIistIcon.swift */; };
+		0843ACF92C5A266200991389 /* FavIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACF82C5A266200991389 /* FavIcon.swift */; };
+		0843ACFB2C5A347900991389 /* ColorForHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACFA2C5A347900991389 /* ColorForHex.swift */; };
 		B403487E2A16380500621574 /* SplitNumberVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403487D2A16380500621574 /* SplitNumberVote.swift */; };
 		B40EE1192A1CC23000B17E78 /* VisualBlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */; };
 		B40EE1222A1E014800B17E78 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1212A1E014800B17E78 /* View.swift */; };
@@ -48,6 +52,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0843ACF12C5A1F3A00991389 /* TaskBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBar.swift; sourceTree = "<group>"; };
+		0843ACF52C5A260200991389 /* FavIistIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavIistIcon.swift; sourceTree = "<group>"; };
+		0843ACF82C5A266200991389 /* FavIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavIcon.swift; sourceTree = "<group>"; };
+		0843ACFA2C5A347900991389 /* ColorForHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorForHex.swift; sourceTree = "<group>"; };
 		B403487D2A16380500621574 /* SplitNumberVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitNumberVote.swift; sourceTree = "<group>"; };
 		B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurEffectView.swift; sourceTree = "<group>"; };
 		B40EE1212A1E014800B17E78 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -101,6 +109,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0843ACF32C5A254B00991389 /* TaskBar */ = {
+			isa = PBXGroup;
+			children = (
+				0843ACF12C5A1F3A00991389 /* TaskBar.swift */,
+			);
+			path = TaskBar;
+			sourceTree = "<group>";
+		};
+		0843ACF42C5A25D700991389 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0843ACF72C5A263B00991389 /* Favorite */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0843ACF72C5A263B00991389 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				0843ACF52C5A260200991389 /* FavIistIcon.swift */,
+				0843ACF82C5A266200991389 /* FavIcon.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		0843ACFC2C5A374600991389 /* custom Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "custom Font";
+			sourceTree = "<group>";
+		};
 		B403487C2A1637F000621574 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +151,7 @@
 				B4D6CAAA2A25E9B800DFB7F2 /* Category.swift */,
 				F5B98C9E2A2DC6BC00FAA867 /* PageControl.swift */,
 				F5B505DF2A347D6E00ADACF4 /* RequestParam.swift */,
+				0843ACFA2C5A347900991389 /* ColorForHex.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -138,6 +179,8 @@
 		B4C4FF0329F2781000DE6433 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0843ACF42C5A25D700991389 /* User */,
+				0843ACF32C5A254B00991389 /* TaskBar */,
 				B43C847A2A08D924009B1810 /* UIKitViews */,
 				B4C4FF0C29F290B500DE6433 /* Home.swift */,
 				B4C4FF1129F29A1E00DE6433 /* LoadImage.swift */,
@@ -206,6 +249,7 @@
 		F51EBD1A29F0CCD7006485D4 /* Manga */ = {
 			isa = PBXGroup;
 			children = (
+				0843ACFC2C5A374600991389 /* custom Font */,
 				F5BD16DF29F3D34000C8114D /* Preview Content */,
 				B4C4FF1529F2A04B00DE6433 /* Resource */,
 				B4C4FF0E29F298F500DE6433 /* Bindings */,
@@ -315,6 +359,7 @@
 				B4C4FF0629F2790000DE6433 /* MangaService.swift in Sources */,
 				F5B98C9F2A2DC6BC00FAA867 /* PageControl.swift in Sources */,
 				B4D6CAA72A25ACEA00DFB7F2 /* CategoriesView.swift in Sources */,
+				0843ACF62C5A260200991389 /* FavIistIcon.swift in Sources */,
 				F5B98CA12A302A9700FAA867 /* GridView.swift in Sources */,
 				B4EDF13E2A08F4CA00A51952 /* ErrorResponse.swift in Sources */,
 				F51EBD1C29F0CCD7006485D4 /* MangaApp.swift in Sources */,
@@ -323,6 +368,7 @@
 				B43C84752A08D85A009B1810 /* CustomCorner.swift in Sources */,
 				B43C84792A08D8A2009B1810 /* MangaDetailState.swift in Sources */,
 				F5B98B5D2A26F01200FAA867 /* MangaChapter.swift in Sources */,
+				0843ACFB2C5A347900991389 /* ColorForHex.swift in Sources */,
 				F518582229F78F0300DB7DBC /* MangaCardView.swift in Sources */,
 				B40EE1192A1CC23000B17E78 /* VisualBlurEffectView.swift in Sources */,
 				F5B98C692A2C30C100FAA867 /* GridCategory.swift in Sources */,
@@ -336,7 +382,9 @@
 				F5BD16E129F3F78400C8114D /* StubManga.swift in Sources */,
 				B4C4FF1229F29A1E00DE6433 /* LoadImage.swift in Sources */,
 				B4D6CAA92A25E6AD00DFB7F2 /* MangaCategory.swift in Sources */,
+				0843ACF22C5A1F3A00991389 /* TaskBar.swift in Sources */,
 				B43C847D2A08D944009B1810 /* ActivityIndicatorView.swift in Sources */,
+				0843ACF92C5A266200991389 /* FavIcon.swift in Sources */,
 				B4EDF1622A0CA23200A51952 /* MangaViewModel.swift in Sources */,
 				B4C4FF1029F2990400DE6433 /* ImageLoader.swift in Sources */,
 				B4C4FF0D29F290B500DE6433 /* Home.swift in Sources */,

@@ -11,7 +11,7 @@ class MangaStore: MangaService {
     static let shared = MangaStore()
     private init() {}
 
-    private let baseURL = "http://14.225.7.221:1989"
+    private let baseURL = "https://manga.gachmen.org"
     private let urlSession = URLSession.shared
     private let jsonDecoder = Utils.jsonDecoder
 

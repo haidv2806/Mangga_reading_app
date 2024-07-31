@@ -27,3 +27,7 @@ struct LoadImage: View {
 		}
 	}
 }
+
+#Preview {
+    ContentView()
+}
