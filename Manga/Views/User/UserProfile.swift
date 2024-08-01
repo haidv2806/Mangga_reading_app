@@ -1,0 +1,53 @@
+//
+//  UserProfile.swift
+//  Manga
+//
+//  Created by Đỗ Văn Hải on 1/8/24.
+//
+
+import SwiftUI
+
+struct UserProfile: View {
+    var body: some View {
+        ZStack{
+            VStack{
+                Image("UserProfile_Backgound")
+                    .resizable()
+                    .scaledToFit()
+                Spacer()
+            }
+            
+            VStack{
+                Spacer(minLength: 130)
+                UserIdentify(User_Image: "UserImg", User_Name: "Olivia Fate")
+                
+                HStack {
+                    Text("Favorite")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                    Spacer()
+                }
+                
+                FavIistIcon()
+                
+                HStack {
+                    Text("Post")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                    Spacer()
+                }
+                
+                UserPostLlist()
+                
+                TaskBar()
+            }
+//            .ignoresSafeArea()
+//            .padding([.top], 150)
+            .padding()
+        }
+    }
+}
+
+#Preview {
+    UserProfile()
+}

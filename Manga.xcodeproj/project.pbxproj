@@ -14,6 +14,10 @@
 		0843ACFF2C5A3C6F00991389 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843ACFE2C5A3C6F00991389 /* UserPost.swift */; };
 		0843AD012C5A3FDA00991389 /* PaddingPosistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD002C5A3FDA00991389 /* PaddingPosistion.swift */; };
 		0843AD032C5A480400991389 /* UserPostLlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD022C5A480400991389 /* UserPostLlist.swift */; };
+		0843AD062C5A499100991389 /* UserIdentify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD052C5A499100991389 /* UserIdentify.swift */; };
+		0843AD082C5A49DA00991389 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD072C5A49DA00991389 /* UserImage.swift */; };
+		0843AD0A2C5B2A5000991389 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD092C5B2A5000991389 /* UserProfile.swift */; };
+		0843AD0C2C5B3C5800991389 /* MangaClassify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD0B2C5B3C5800991389 /* MangaClassify.swift */; };
 		B403487E2A16380500621574 /* SplitNumberVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403487D2A16380500621574 /* SplitNumberVote.swift */; };
 		B40EE1192A1CC23000B17E78 /* VisualBlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */; };
 		B40EE1222A1E014800B17E78 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1212A1E014800B17E78 /* View.swift */; };
@@ -62,6 +66,10 @@
 		0843ACFE2C5A3C6F00991389 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		0843AD002C5A3FDA00991389 /* PaddingPosistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingPosistion.swift; sourceTree = "<group>"; };
 		0843AD022C5A480400991389 /* UserPostLlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostLlist.swift; sourceTree = "<group>"; };
+		0843AD052C5A499100991389 /* UserIdentify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdentify.swift; sourceTree = "<group>"; };
+		0843AD072C5A49DA00991389 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
+		0843AD092C5B2A5000991389 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		0843AD0B2C5B3C5800991389 /* MangaClassify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaClassify.swift; sourceTree = "<group>"; };
 		B403487D2A16380500621574 /* SplitNumberVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitNumberVote.swift; sourceTree = "<group>"; };
 		B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurEffectView.swift; sourceTree = "<group>"; };
 		B40EE1212A1E014800B17E78 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -126,8 +134,10 @@
 		0843ACF42C5A25D700991389 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				0843AD042C5A495500991389 /* Identify */,
 				0843ACFD2C5A3C3900991389 /* Post */,
 				0843ACF72C5A263B00991389 /* Favorite */,
+				0843AD092C5B2A5000991389 /* UserProfile.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -155,6 +165,15 @@
 				0843AD022C5A480400991389 /* UserPostLlist.swift */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		0843AD042C5A495500991389 /* Identify */ = {
+			isa = PBXGroup;
+			children = (
+				0843AD052C5A499100991389 /* UserIdentify.swift */,
+				0843AD072C5A49DA00991389 /* UserImage.swift */,
+			);
+			path = Identify;
 			sourceTree = "<group>";
 		};
 		B403487C2A1637F000621574 /* Common */ = {
@@ -189,6 +208,7 @@
 				B4EDF1412A08FDB600A51952 /* MangaDetail.swift */,
 				B4D6CAA82A25E6AD00DFB7F2 /* MangaCategory.swift */,
 				F5B98B5C2A26F01200FAA867 /* MangaChapter.swift */,
+				0843AD0B2C5B3C5800991389 /* MangaClassify.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -366,9 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0843AD082C5A49DA00991389 /* UserImage.swift in Sources */,
 				B40EE1222A1E014800B17E78 /* View.swift in Sources */,
 				B43C84772A08D88A009B1810 /* MangaListState.swift in Sources */,
 				B43C84712A08D819009B1810 /* ScrollviewDetector.swift in Sources */,
+				0843AD0C2C5B3C5800991389 /* MangaClassify.swift in Sources */,
 				B4C4FF0229F2732D00DE6433 /* MangaList.swift in Sources */,
 				B403487E2A16380500621574 /* SplitNumberVote.swift in Sources */,
 				F51EBD1E29F0CCD7006485D4 /* ContentView.swift in Sources */,
@@ -382,6 +404,7 @@
 				F51EBD1C29F0CCD7006485D4 /* MangaApp.swift in Sources */,
 				0843ACFF2C5A3C6F00991389 /* UserPost.swift in Sources */,
 				0843AD032C5A480400991389 /* UserPostLlist.swift in Sources */,
+				0843AD0A2C5B2A5000991389 /* UserProfile.swift in Sources */,
 				B4D6CAAB2A25E9B800DFB7F2 /* Category.swift in Sources */,
 				F5B505E02A347D6E00ADACF4 /* RequestParam.swift in Sources */,
 				0843AD012C5A3FDA00991389 /* PaddingPosistion.swift in Sources */,
@@ -395,6 +418,7 @@
 				B43C846F2A08D800009B1810 /* LoadingView.swift in Sources */,
 				B4C4FF0929F280DC00DE6433 /* MangaStore.swift in Sources */,
 				B4EDF15E2A0CA1CA00A51952 /* Client.swift in Sources */,
+				0843AD062C5A499100991389 /* UserIdentify.swift in Sources */,
 				B4D6CAA52A24AE9B00DFB7F2 /* ColorForRGB.swift in Sources */,
 				B4EDF1602A0CA1DD00A51952 /* GenericApi.swift in Sources */,
 				B4C4FF0B29F2814D00DE6433 /* Utils.swift in Sources */,

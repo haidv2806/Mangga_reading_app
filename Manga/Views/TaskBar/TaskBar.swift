@@ -25,12 +25,9 @@ struct TaskBar: View {
                     .scaledToFit()
                     .frame(height: 60)
             })
-
-
-
         }
         .font(.largeTitle)
-        .frame(height: 100)
+        .frame(height: 70)
     }
 }
 

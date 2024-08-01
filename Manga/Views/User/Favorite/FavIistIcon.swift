@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct FavIistIcon: View {
+
+    
     var body: some View {
-        HStack (spacing: 10){
-            FavIcon(Favorite_Name: "Horor", Favorite_Color: Color(hex: "#664C65"))
-            FavIcon(Favorite_Name: "Drama", Favorite_Color: Color(hex: "#A58ED2"))
-            FavIcon(Favorite_Name: "Romance", Favorite_Color: Color(hex: "#FF34BA"))
-            FavIcon(Favorite_Name: "Fantasy", Favorite_Color: Color(hex: "#F6D166"))
+        HStack (spacing: 17){
+            FavIcon(FavoriteName: .Horror)
+            FavIcon(FavoriteName: .Drama)
+            FavIcon(FavoriteName: .Romance)
+            FavIcon(FavoriteName: .Fantasy)
         }
-        .padding()
+        .padding(sides: [.left, .right])
     }
 }
 

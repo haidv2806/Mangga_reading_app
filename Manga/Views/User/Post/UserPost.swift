@@ -37,8 +37,8 @@ struct UserPost: View {
             .background(Color(hex: "#FCDBB8"))
             .clipShape(.rect(cornerRadius: 20))
         }
-        .padding()
-
+//        .padding(sides: [.left])
+//        .padding(sides: [.right])
     }
 }
 
