@@ -13,6 +13,7 @@ struct UserIdentify: View {
     var body: some View {
         HStack (spacing: 20){
             UserImage(User_Image: UIImage(named: User_Image) ?? UIImage())
+                .frame(width: 150, height: 150)
             
             Text(User_Name)
                 .font(.largeTitle)

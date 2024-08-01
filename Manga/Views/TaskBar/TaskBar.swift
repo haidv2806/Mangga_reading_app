@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TaskBar: View {
+    let User_Image: String
     var body: some View {
         HStack (spacing: 50){
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
@@ -20,17 +21,16 @@ struct TaskBar: View {
                 Image(systemName: "bookmark")
             })
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                Image("UserImg")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 60)
+                UserImage(User_Image: UIImage(named: User_Image) ?? UIImage())
+                    .frame(width: 60, height: 60)
             })
         }
         .font(.largeTitle)
         .frame(height: 70)
+        .foregroundColor(.black)
     }
 }
 
 #Preview {
-    TaskBar()
+    TaskBar(User_Image: "UserImg")
 }

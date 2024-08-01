@@ -13,10 +13,7 @@ struct UserImage: View {
         Image(uiImage: User_Image)
             .resizable()
             .scaledToFill()
-            .padding(5)
-            .background(Color.orange)
             .aspectRatio(contentMode: .fill)
-            .frame(width: 150, height: 150)
             .clipShape(Circle())
             
 

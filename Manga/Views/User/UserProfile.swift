@@ -39,7 +39,7 @@ struct UserProfile: View {
                 
                 UserPostLlist()
                 
-                TaskBar()
+                TaskBar(User_Image: "UserImg")
             }
 //            .ignoresSafeArea()
 //            .padding([.top], 150)
