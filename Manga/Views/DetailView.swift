@@ -186,44 +186,7 @@ extension DetailView {
 	}
 
     var readButton: some View {
-        GeometryReader { geo in
-            HStack(spacing: 10) {
-                if #available(iOS 15.0, *) {
-                    ZStack {
-                        Circle()
-                            .fill(colorFromRGB(red: 255, green: 240, blue: 226))
-                            .frame(width: 60, height: 60)
-                        
-                        Image("bookmark")
-                            .resizable()
-                            .frame(width: 28.0, height: 28.0)
-                            .symbolVariant(.circle.fill)
-                            .foregroundStyle(colorFromRGB(red: 250, green: 135, blue: 48))
-                    }
-                    .padding(.leading, 50)
-                    
-                    Button(action: {
-                            print("Read")
-                        }) {
-                            Text("Read Now")
-                                .frame(minWidth: 0, maxWidth: geo.size.width * 0.5)
-                                .font(.system(size: 18))
-                                .padding()
-                                .foregroundColor(.white)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color.white, lineWidth: 2)
-                            )
-                        }
-                        .background(colorFromRGB(red: 253, green: 134, blue: 47))
-                        .cornerRadius(25)
-
-                } else {
-                    // Fallback on earlier versions
-                }
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: 90)
+        PreviewContentBar()
     }
 }
 

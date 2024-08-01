@@ -18,7 +18,7 @@ struct UserIdentify: View {
             Text(User_Name)
                 .font(.largeTitle)
                 .bold()
-                .padding([.top], 30)
+                .padding([.top], 50)
         }
 //        .padding()
     }

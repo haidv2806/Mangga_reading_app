@@ -29,6 +29,7 @@ struct FavIcon: View {
                     )
                     .font(.system(size: 16))
                     .clipShape(.rect(cornerRadius: 40))
+                    .frame(height: 32)
 //                    .clipShape(.rect(cornerRadius: geometry.size.width / 2))
 //            }
         }

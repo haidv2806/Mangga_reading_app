@@ -26,7 +26,7 @@ struct TaskBar: View {
             })
         }
         .font(.largeTitle)
-        .frame(height: 70)
+        .frame(height: 60)
         .foregroundColor(.black)
     }
 }

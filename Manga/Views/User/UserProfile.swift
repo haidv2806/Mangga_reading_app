@@ -18,7 +18,8 @@ struct UserProfile: View {
             }
             
             VStack{
-                Spacer(minLength: 130)
+//                Spacer(minLength: 130)
+                Spacer()
                 UserIdentify(User_Image: "UserImg", User_Name: "Olivia Fate")
                 
                 HStack {
@@ -43,7 +44,7 @@ struct UserProfile: View {
             }
 //            .ignoresSafeArea()
 //            .padding([.top], 150)
-            .padding()
+            .padding(sides: [.left, .right], value: 17)
         }
     }
 }
