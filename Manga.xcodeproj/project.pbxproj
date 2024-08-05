@@ -24,6 +24,7 @@
 		0843AD192C5B7DBE00991389 /* HomeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD182C5B7DBE00991389 /* HomeInterface.swift */; };
 		0843AD1F2C5B86B800991389 /* ReadNowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD1E2C5B86B800991389 /* ReadNowButton.swift */; };
 		0843AD232C5B889100991389 /* PreviewContentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD222C5B889100991389 /* PreviewContentBar.swift */; };
+		08607A602C60C9D0001E9FE0 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08607A5F2C60C9D0001E9FE0 /* NavigationDestination.swift */; };
 		B403487E2A16380500621574 /* SplitNumberVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403487D2A16380500621574 /* SplitNumberVote.swift */; };
 		B40EE1192A1CC23000B17E78 /* VisualBlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */; };
 		B40EE1222A1E014800B17E78 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1212A1E014800B17E78 /* View.swift */; };
@@ -82,6 +83,7 @@
 		0843AD182C5B7DBE00991389 /* HomeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterface.swift; sourceTree = "<group>"; };
 		0843AD1E2C5B86B800991389 /* ReadNowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNowButton.swift; sourceTree = "<group>"; };
 		0843AD222C5B889100991389 /* PreviewContentBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContentBar.swift; sourceTree = "<group>"; };
+		08607A5F2C60C9D0001E9FE0 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
 		B403487D2A16380500621574 /* SplitNumberVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitNumberVote.swift; sourceTree = "<group>"; };
 		B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurEffectView.swift; sourceTree = "<group>"; };
 		B40EE1212A1E014800B17E78 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				F5BD16E029F3F78400C8114D /* StubManga.swift */,
 				B4EDF1412A08FDB600A51952 /* MangaDetail.swift */,
 				B4D6CAA82A25E6AD00DFB7F2 /* MangaCategory.swift */,
+				08607A5F2C60C9D0001E9FE0 /* NavigationDestination.swift */,
 				F5B98B5C2A26F01200FAA867 /* MangaChapter.swift */,
 				0843AD0B2C5B3C5800991389 /* MangaClassify.swift */,
 			);
@@ -484,6 +487,7 @@
 				0843ACF22C5A1F3A00991389 /* TaskBar.swift in Sources */,
 				B43C847D2A08D944009B1810 /* ActivityIndicatorView.swift in Sources */,
 				0843ACF92C5A266200991389 /* FavIcon.swift in Sources */,
+				08607A602C60C9D0001E9FE0 /* NavigationDestination.swift in Sources */,
 				B4EDF1622A0CA23200A51952 /* MangaViewModel.swift in Sources */,
 				B4C4FF1029F2990400DE6433 /* ImageLoader.swift in Sources */,
 				0843AD192C5B7DBE00991389 /* HomeInterface.swift in Sources */,

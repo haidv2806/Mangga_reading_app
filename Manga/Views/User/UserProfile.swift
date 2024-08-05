@@ -9,10 +9,7 @@ import SwiftUI
 
 struct UserProfile: View {
     
-    @State private var isNavigation_UserProfile_Active = false
-    @State private var isNavigation_HomeInterFace_Active = false
-    @State private var isNavigation_Comment_Active = false
-    @State private var isNavigation_Bookmark_Active = false
+    @State private var activeNavigation: NavigationDestination?
     
     @State public var selectedCategory: String = ""
     
@@ -49,22 +46,11 @@ struct UserProfile: View {
                     
                     UserPostLlist()
                     
-                    TaskBar(User_Image: "UserImg", isNavigation_UserProfile_Active: $isNavigation_UserProfile_Active,  isNavigation_HomeInterFace_Active: $isNavigation_HomeInterFace_Active,isNavigation_Comment_Active: $isNavigation_Comment_Active, isNavigation_Bookmark_Active: $isNavigation_Bookmark_Active)
-                    NavigationLink(destination: UserProfile(), isActive: $isNavigation_UserProfile_Active) {
-                        EmptyView()
-                    }
-                    NavigationLink(destination: HomeInterface(selectedCategory: $selectedCategory), isActive: $isNavigation_HomeInterFace_Active) {
-                        EmptyView()
-                    }
-                    NavigationLink(destination: UserProfile(), isActive: $isNavigation_Comment_Active) {
-                        EmptyView()
-                    }
-                    NavigationLink(destination: UserProfile(), isActive: $isNavigation_Bookmark_Active) {
-                        EmptyView()
+                    TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation)
+                    if let activeNavigation = activeNavigation {
+                        destinationView(for: activeNavigation)
                     }
                 }
-                //            .ignoresSafeArea()
-                //            .padding([.top], 150)
                 .padding(sides: [.left, .right], value: 17)
             }
         }
