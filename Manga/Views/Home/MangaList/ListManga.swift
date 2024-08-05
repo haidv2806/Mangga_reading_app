@@ -7,18 +7,21 @@
 
 import SwiftUI
 
-struct ListManga: View {
-    var body: some View {
+
+func ListManga (mangas: [MangaCategory]) -> some View {
         ScrollView(.vertical) {
             LazyVGrid(columns: [GridItem(), GridItem()], content: {
-                ForEach(0..<16, id: \.self) { value in
-                    SpecificManga()
+                ForEach(mangas) { manga in
+                    SpecificManga(Manga_title: manga.title, Manga_authorHome: manga.authorHome, Manga_poster: manga.poster.absoluteString)
                 }
             })
         }
-    }
 }
 
-#Preview {
-    ListManga()
+struct ListManga_preview: PreviewProvider {
+    static var previews: some View {
+        @StateObject var viewModel = MangaViewModel()
+        
+        ListManga(mangas: viewModel.mangaCategories)
+    }
 }

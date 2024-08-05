@@ -37,5 +37,5 @@ struct FavIcon: View {
 }
 
 #Preview {
-    FavIcon(FavoriteName: .Horror)
+    FavIcon(FavoriteName: .Erotica)
 }

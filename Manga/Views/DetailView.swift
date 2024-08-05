@@ -114,7 +114,7 @@ extension DetailView {
 			Image(systemName: "chevron.left")
 				.font(.title3)
 				.foregroundColor(.black)
-				.contentShape(Rectangle())
+				.contentShape(Circle())
 		}
 		.padding([.leading, .vertical], 18)
 		.frame(maxWidth: 50, maxHeight: 50 ,alignment: .leading)

@@ -75,7 +75,7 @@ struct CategoriesView: View {
 					//
 					GeometryReader { geo in
 						VStack(spacing: 10) {
-							NavigationLink(destination: Home(selectedCategory: $selectedCategory)) {
+                            NavigationLink(destination: HomeInterface( selectedCategory: $selectedCategory)) {
 								Text("Read Now")
 									.frame(minWidth: 0, maxWidth: geo.size.width * 0.5, maxHeight: 30)
 									.font(.system(size: 18))

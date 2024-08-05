@@ -30,7 +30,7 @@ struct HomeTop: View {
             .clipShape(.rect(cornerRadius: 40))
             
             Image(systemName: "bell.fill")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .font(.title)
                 .padding(sides: [.left], value: 20)
                 
         }
