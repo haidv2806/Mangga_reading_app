@@ -12,6 +12,8 @@ enum NavigationDestination: Identifiable{
     case Comment
     case Bookmark
     case UserProfile
+    case SignIn
+    case SignUp
     
     var id: String {
             switch self {
@@ -24,6 +26,10 @@ enum NavigationDestination: Identifiable{
                 return "bookmark"
             case .UserProfile:
                 return "userProfile"
+            case .SignIn:
+                return "signIn"
+            case .SignUp:
+                return "signUp"
             }
         }
     
@@ -35,10 +41,14 @@ func destinationView(for destination: NavigationDestination) -> some View {
     case .HomeInterface(let selectedCategory):
         HomeInterface(selectedCategory: selectedCategory)
     case .Comment:
-        UserProfile() // placehoder
+        Comments()
     case .Bookmark:
         UserProfile() // placehoder
     case .UserProfile:
         UserProfile()
+    case .SignIn:
+        SignIn()
+    case .SignUp:
+        SignUp()
     }
 }

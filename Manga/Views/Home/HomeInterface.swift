@@ -18,6 +18,7 @@ struct HomeInterface: View {
         NavigationView {
             VStack{
                 HomeTop()
+                
                 if #available(iOS 15.0, *) {
                     ListManga(mangas: viewModel.mangaCategories)
                         .task {
@@ -25,13 +26,14 @@ struct HomeInterface: View {
                         }
                 } else {
                     // Fallback for earlier versions
-                    Text("AsyncImage is only available on iOS 15 or newer.")
+                    Text("task is only available on iOS 15 or newer.")
                 }
                 
                 TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation)
                 if let activeNavigation = activeNavigation {
                     destinationView(for: activeNavigation)
                 }
+                
             }
             .padding(sides: [.left, .right], value: 17)
         }

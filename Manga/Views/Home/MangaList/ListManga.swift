@@ -18,7 +18,6 @@ struct ListManga: View {
             LazyVGrid(columns: [GridItem(), GridItem()], content: {
                 ForEach(mangas) { manga in
                     SpecificManga(Manga_title: manga.title, Manga_authorHome: manga.authorHome, Manga_poster: manga.poster.absoluteString)
-                    
                 }
             })
         }
@@ -40,7 +39,8 @@ struct ListManga_preview: PreviewProvider {
                 }
         } else {
             // Fallback for earlier versions
-            Text("AsyncImage is only available on iOS 15 or newer.")
+            Text("task is only available on iOS 15 or newer.")
         }
+        
     }
 }

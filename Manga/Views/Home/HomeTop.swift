@@ -23,6 +23,7 @@ struct HomeTop: View {
                 
                 TextField("Search here", text: $SearchText)
                     .background(Color(hex: "#F4F4F4"))
+                    .keyboardType(.default)
                 
             }
             .padding(10)

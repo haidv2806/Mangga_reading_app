@@ -24,7 +24,20 @@
 		0843AD192C5B7DBE00991389 /* HomeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD182C5B7DBE00991389 /* HomeInterface.swift */; };
 		0843AD1F2C5B86B800991389 /* ReadNowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD1E2C5B86B800991389 /* ReadNowButton.swift */; };
 		0843AD232C5B889100991389 /* PreviewContentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843AD222C5B889100991389 /* PreviewContentBar.swift */; };
+		0854A8912C64A9EF006D32E5 /* ChatPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854A8902C64A9EE006D32E5 /* ChatPanel.swift */; };
+		0854A8932C64AC8F006D32E5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854A8922C64AC8F006D32E5 /* Comment.swift */; };
 		08607A602C60C9D0001E9FE0 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08607A5F2C60C9D0001E9FE0 /* NavigationDestination.swift */; };
+		0864BCE42C69E01C00CB8DBA /* GroupCommentForAMangga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCE32C69E01C00CB8DBA /* GroupCommentForAMangga.swift */; };
+		0864BCE72C69F1D700CB8DBA /* CommentAndLastReadBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCE62C69F1D700CB8DBA /* CommentAndLastReadBar.swift */; };
+		0864BCE92C69F7AA00CB8DBA /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCE82C69F7AA00CB8DBA /* Comments.swift */; };
+		0864BCEB2C69FA9000CB8DBA /* LastRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCEA2C69FA9000CB8DBA /* LastRead.swift */; };
+		0864BCEE2C6A016B00CB8DBA /* AppName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCED2C6A016B00CB8DBA /* AppName.swift */; };
+		0864BCF02C6A036100CB8DBA /* GlowBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCEF2C6A036100CB8DBA /* GlowBorder.swift */; };
+		0864BCF62C6A07B700CB8DBA /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCF52C6A07B700CB8DBA /* SignIn.swift */; };
+		0864BCF82C6A082600CB8DBA /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCF72C6A082600CB8DBA /* AppBackground.swift */; };
+		0864BCFA2C6A091000CB8DBA /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCF92C6A091000CB8DBA /* AppButton.swift */; };
+		0864BCFC2C6A0B8500CB8DBA /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCFB2C6A0B8500CB8DBA /* AppTextField.swift */; };
+		0864BCFE2C6A131500CB8DBA /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BCFD2C6A131500CB8DBA /* SignUp.swift */; };
 		B403487E2A16380500621574 /* SplitNumberVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403487D2A16380500621574 /* SplitNumberVote.swift */; };
 		B40EE1192A1CC23000B17E78 /* VisualBlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */; };
 		B40EE1222A1E014800B17E78 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1212A1E014800B17E78 /* View.swift */; };
@@ -83,7 +96,20 @@
 		0843AD182C5B7DBE00991389 /* HomeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterface.swift; sourceTree = "<group>"; };
 		0843AD1E2C5B86B800991389 /* ReadNowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNowButton.swift; sourceTree = "<group>"; };
 		0843AD222C5B889100991389 /* PreviewContentBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContentBar.swift; sourceTree = "<group>"; };
+		0854A8902C64A9EE006D32E5 /* ChatPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPanel.swift; sourceTree = "<group>"; };
+		0854A8922C64AC8F006D32E5 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		08607A5F2C60C9D0001E9FE0 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
+		0864BCE32C69E01C00CB8DBA /* GroupCommentForAMangga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCommentForAMangga.swift; sourceTree = "<group>"; };
+		0864BCE62C69F1D700CB8DBA /* CommentAndLastReadBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAndLastReadBar.swift; sourceTree = "<group>"; };
+		0864BCE82C69F7AA00CB8DBA /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		0864BCEA2C69FA9000CB8DBA /* LastRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastRead.swift; sourceTree = "<group>"; };
+		0864BCED2C6A016B00CB8DBA /* AppName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppName.swift; sourceTree = "<group>"; };
+		0864BCEF2C6A036100CB8DBA /* GlowBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowBorder.swift; sourceTree = "<group>"; };
+		0864BCF52C6A07B700CB8DBA /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		0864BCF72C6A082600CB8DBA /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
+		0864BCF92C6A091000CB8DBA /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		0864BCFB2C6A0B8500CB8DBA /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		0864BCFD2C6A131500CB8DBA /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		B403487D2A16380500621574 /* SplitNumberVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitNumberVote.swift; sourceTree = "<group>"; };
 		B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurEffectView.swift; sourceTree = "<group>"; };
 		B40EE1212A1E014800B17E78 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -226,6 +252,39 @@
 			path = PreviewContentBar;
 			sourceTree = "<group>";
 		};
+		0854A88F2C64A922006D32E5 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				0854A8902C64A9EE006D32E5 /* ChatPanel.swift */,
+				0854A8922C64AC8F006D32E5 /* Comment.swift */,
+				0864BCE32C69E01C00CB8DBA /* GroupCommentForAMangga.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		0864BCE52C69F18E00CB8DBA /* Comments and Last Read */ = {
+			isa = PBXGroup;
+			children = (
+				0864BCE62C69F1D700CB8DBA /* CommentAndLastReadBar.swift */,
+				0864BCE82C69F7AA00CB8DBA /* Comments.swift */,
+				0864BCEA2C69FA9000CB8DBA /* LastRead.swift */,
+			);
+			path = "Comments and Last Read";
+			sourceTree = "<group>";
+		};
+		0864BCEC2C6A013100CB8DBA /* SignUp and SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				0864BCED2C6A016B00CB8DBA /* AppName.swift */,
+				0864BCF72C6A082600CB8DBA /* AppBackground.swift */,
+				0864BCF92C6A091000CB8DBA /* AppButton.swift */,
+				0864BCFB2C6A0B8500CB8DBA /* AppTextField.swift */,
+				0864BCF52C6A07B700CB8DBA /* SignIn.swift */,
+				0864BCFD2C6A131500CB8DBA /* SignUp.swift */,
+			);
+			path = "SignUp and SignIn";
+			sourceTree = "<group>";
+		};
 		B403487C2A1637F000621574 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +317,7 @@
 				B4EDF1412A08FDB600A51952 /* MangaDetail.swift */,
 				B4D6CAA82A25E6AD00DFB7F2 /* MangaCategory.swift */,
 				08607A5F2C60C9D0001E9FE0 /* NavigationDestination.swift */,
+				0864BCEF2C6A036100CB8DBA /* GlowBorder.swift */,
 				F5B98B5C2A26F01200FAA867 /* MangaChapter.swift */,
 				0843AD0B2C5B3C5800991389 /* MangaClassify.swift */,
 			);
@@ -267,6 +327,9 @@
 		B4C4FF0329F2781000DE6433 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0864BCEC2C6A013100CB8DBA /* SignUp and SignIn */,
+				0864BCE52C69F18E00CB8DBA /* Comments and Last Read */,
+				0854A88F2C64A922006D32E5 /* Comment */,
 				0843AD1A2C5B81DE00991389 /* Preview manga */,
 				0843AD0D2C5B63FA00991389 /* Home */,
 				0843ACF42C5A25D700991389 /* User */,
@@ -443,14 +506,17 @@
 				B40EE1222A1E014800B17E78 /* View.swift in Sources */,
 				B43C84772A08D88A009B1810 /* MangaListState.swift in Sources */,
 				B43C84712A08D819009B1810 /* ScrollviewDetector.swift in Sources */,
+				0864BCFC2C6A0B8500CB8DBA /* AppTextField.swift in Sources */,
 				0843AD0C2C5B3C5800991389 /* MangaClassify.swift in Sources */,
 				B4C4FF0229F2732D00DE6433 /* MangaList.swift in Sources */,
 				B403487E2A16380500621574 /* SplitNumberVote.swift in Sources */,
+				0864BCFA2C6A091000CB8DBA /* AppButton.swift in Sources */,
 				F51EBD1E29F0CCD7006485D4 /* ContentView.swift in Sources */,
 				0843AD132C5B700200991389 /* SpecificManga.swift in Sources */,
 				B43C84732A08D838009B1810 /* DetailView.swift in Sources */,
 				B4C4FF0629F2790000DE6433 /* MangaService.swift in Sources */,
 				F5B98C9F2A2DC6BC00FAA867 /* PageControl.swift in Sources */,
+				0864BCF02C6A036100CB8DBA /* GlowBorder.swift in Sources */,
 				B4D6CAA72A25ACEA00DFB7F2 /* CategoriesView.swift in Sources */,
 				0843ACF62C5A260200991389 /* FavIistIcon.swift in Sources */,
 				F5B98CA12A302A9700FAA867 /* GridView.swift in Sources */,
@@ -459,6 +525,10 @@
 				0843ACFF2C5A3C6F00991389 /* UserPost.swift in Sources */,
 				0843AD032C5A480400991389 /* UserPostLlist.swift in Sources */,
 				0843AD0A2C5B2A5000991389 /* UserProfile.swift in Sources */,
+				0854A8932C64AC8F006D32E5 /* Comment.swift in Sources */,
+				0864BCEB2C69FA9000CB8DBA /* LastRead.swift in Sources */,
+				0864BCFE2C6A131500CB8DBA /* SignUp.swift in Sources */,
+				0864BCEE2C6A016B00CB8DBA /* AppName.swift in Sources */,
 				B4D6CAAB2A25E9B800DFB7F2 /* Category.swift in Sources */,
 				F5B505E02A347D6E00ADACF4 /* RequestParam.swift in Sources */,
 				0843AD012C5A3FDA00991389 /* PaddingPosistion.swift in Sources */,
@@ -477,6 +547,7 @@
 				B4EDF15E2A0CA1CA00A51952 /* Client.swift in Sources */,
 				0843AD062C5A499100991389 /* UserIdentify.swift in Sources */,
 				B4D6CAA52A24AE9B00DFB7F2 /* ColorForRGB.swift in Sources */,
+				0854A8912C64A9EF006D32E5 /* ChatPanel.swift in Sources */,
 				B4EDF1602A0CA1DD00A51952 /* GenericApi.swift in Sources */,
 				B4C4FF0B29F2814D00DE6433 /* Utils.swift in Sources */,
 				B4EDF1422A08FDB600A51952 /* MangaDetail.swift in Sources */,
@@ -486,10 +557,15 @@
 				B4D6CAA92A25E6AD00DFB7F2 /* MangaCategory.swift in Sources */,
 				0843ACF22C5A1F3A00991389 /* TaskBar.swift in Sources */,
 				B43C847D2A08D944009B1810 /* ActivityIndicatorView.swift in Sources */,
+				0864BCF82C6A082600CB8DBA /* AppBackground.swift in Sources */,
 				0843ACF92C5A266200991389 /* FavIcon.swift in Sources */,
+				0864BCF62C6A07B700CB8DBA /* SignIn.swift in Sources */,
+				0864BCE42C69E01C00CB8DBA /* GroupCommentForAMangga.swift in Sources */,
 				08607A602C60C9D0001E9FE0 /* NavigationDestination.swift in Sources */,
 				B4EDF1622A0CA23200A51952 /* MangaViewModel.swift in Sources */,
+				0864BCE92C69F7AA00CB8DBA /* Comments.swift in Sources */,
 				B4C4FF1029F2990400DE6433 /* ImageLoader.swift in Sources */,
+				0864BCE72C69F1D700CB8DBA /* CommentAndLastReadBar.swift in Sources */,
 				0843AD192C5B7DBE00991389 /* HomeInterface.swift in Sources */,
 				B4C4FF0D29F290B500DE6433 /* Home.swift in Sources */,
 			);
