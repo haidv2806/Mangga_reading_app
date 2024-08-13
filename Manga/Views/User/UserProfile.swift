@@ -10,6 +10,7 @@ import SwiftUI
 struct UserProfile: View {
     
     @State private var activeNavigation: NavigationDestination?
+    @State private var isCurrentDestination: String = "UserProfile"
     
     @State public var selectedCategory: String = ""
     
@@ -46,7 +47,7 @@ struct UserProfile: View {
                     
                     UserPostLlist()
                     
-                    TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation)
+                    TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation, isCurrentDestination: $isCurrentDestination)
                     if let activeNavigation = activeNavigation {
                         destinationView(for: activeNavigation)
                     }

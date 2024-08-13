@@ -26,7 +26,7 @@ struct SignUp: View {
                     
                     Spacer()
                     
-                    AppButton(SignInUp: "Sign Up")
+                        AppButton(SignInUp: "Sign Up")
                     
                     HStack{
                         Text("Don’t have an account?")

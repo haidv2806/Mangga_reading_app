@@ -10,7 +10,10 @@ import SwiftUI
 struct HomeInterface: View {
     @StateObject var viewModel = MangaViewModel()
     @State private var activeNavigation: NavigationDestination?
+    @State private var isCurrentDestination: String = "HomeInterface"
+    
     @Binding var selectedCategory: String
+    
     
     @State private var showDetailView: Bool = false
     @State private var selectedManga: MangaCategory? = nil
@@ -29,7 +32,7 @@ struct HomeInterface: View {
                         }
 
                 
-                TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation)
+                TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation, isCurrentDestination: $isCurrentDestination)
                 if let activeNavigation = activeNavigation {
                     destinationView(for: activeNavigation)
                 }

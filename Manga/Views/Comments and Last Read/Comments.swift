@@ -9,12 +9,14 @@ import SwiftUI
 
 struct Comments: View {
     @State private var activeNavigation: NavigationDestination?
+    @State private var isCurrentDestination: String = "Comment"
+    @State private var isCurrentDestinationForCommentAndReadBar: String = "Comments"
     
     var body: some View {
         NavigationView {
             VStack{
                 VStack{
-                    CommentAndLastReadBar()
+                    CommentAndLastReadBar(isCurrentDestinationForCommentAndReadBar: $isCurrentDestinationForCommentAndReadBar)
                     
                     ScrollView(.vertical) {
                         LazyVGrid(columns: [GridItem()], content: {
@@ -31,7 +33,7 @@ struct Comments: View {
                 }
                 .padding()
                 
-                TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation)
+                TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation, isCurrentDestination: $isCurrentDestination)
                 if let activeNavigation = activeNavigation {
                     destinationView(for: activeNavigation)
                 }

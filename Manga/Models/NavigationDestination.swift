@@ -14,6 +14,8 @@ enum NavigationDestination: Identifiable{
     case UserProfile
     case SignIn
     case SignUp
+    case LastRead
+    
     
     var id: String {
             switch self {
@@ -30,6 +32,8 @@ enum NavigationDestination: Identifiable{
                 return "signIn"
             case .SignUp:
                 return "signUp"
+            case .LastRead:
+                return "LastRead"
             }
         }
     
@@ -50,5 +54,7 @@ func destinationView(for destination: NavigationDestination) -> some View {
         SignIn()
     case .SignUp:
         SignUp()
+    case .LastRead:
+        LastRead()
     }
 }

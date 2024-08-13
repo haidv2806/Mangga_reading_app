@@ -32,7 +32,7 @@ struct SignIn: View {
                     
                     Spacer()
                     
-                    AppButton(SignInUp: "Sign In")
+                        AppButton(SignInUp: "Sign In")
                     
                     HStack{
                         Text("Don’t have an account?")
