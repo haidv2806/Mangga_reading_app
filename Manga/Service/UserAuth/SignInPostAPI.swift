@@ -56,6 +56,10 @@ class SignInPostAPI: ObservableObject {
                         UserDefaults.standard.set(self.Email, forKey: "email")
                         UserDefaults.standard.set(self.Password, forKey: "password")
                         UserDefaults.standard.set(self.IsUserLoggedIn, forKey: "isUserLoggedIn")
+                        UserDefaults.standard.set(response.user.id_user, forKey: "idUser")
+                        UserDefaults.standard.set(response.user.user_name, forKey: "userName")
+                        UserDefaults.standard.set(response.user.link_avatar, forKey: "linkAvatar")
+                        
                         print(UserDefaults.standard.dictionaryRepresentation())
                     }
                     
