@@ -10,7 +10,6 @@ import SwiftUI
 struct AppButton: View {
     let SignInUp: String
     var body: some View {
-        NavigationLink(destination: destinationView(for: .HomeInterface(selectedCategory: .constant("")))) {
             Text(SignInUp)
                 .font(.title)
                 .bold()
@@ -20,7 +19,6 @@ struct AppButton: View {
                 .background(Color(hex: "#F48611"))
                 .clipShape(.rect(cornerRadius: 40))
                 .glowBorder(color: Color(hex: "#F48611"), lineWidth: 5)
-        }
     }
 }
 

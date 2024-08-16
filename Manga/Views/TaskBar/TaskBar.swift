@@ -30,6 +30,8 @@ struct TaskBar: View {
             NavigationLink(destination: destinationView(for: .UserProfile)) {
                 UserImage(User_Image: UIImage(named: User_Image) ?? UIImage())
                     .frame(width: 60, height: 60)
+                    .padding(5)
+                    .foregroundColor(isCurrentDestination == "Bookmark" ? .orange : .black)
             }
         }
         .font(.largeTitle)

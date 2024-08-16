@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppTextField: View {
-    @State private var value: String = ""
+    @Binding var value: String
     
     let Text_Field_Title: String
     
@@ -39,6 +39,13 @@ struct AppTextField: View {
     }
 }
 
-#Preview {
-    AppTextField(Text_Field_Title: "Email")
+struct AppTextField_preview: PreviewProvider {
+    static var previews: some View {
+        @State var value: String = ""
+        AppTextField(value: $value, Text_Field_Title: "Email")
+    }
 }
+
+//#Preview {
+//    AppTextField(value: <#Binding<String>#>, Text_Field_Title: "Email")
+//}

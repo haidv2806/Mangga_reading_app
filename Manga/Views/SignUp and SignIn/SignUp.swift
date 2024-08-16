@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SignUp: View {
+    @StateObject private var SignUp_PostAPI = SignUpPostAPI()
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -19,14 +21,16 @@ struct SignUp: View {
                     
                     AppName()
                     
-                    
-                    AppTextField(Text_Field_Title: "Name")
-                    AppTextField(Text_Field_Title: "Email")
-                    AppTextField(Text_Field_Title: "Password")
+                    AppTextField(value: $SignUp_PostAPI.Name, Text_Field_Title: "Name")
+                    AppTextField(value: $SignUp_PostAPI.Email, Text_Field_Title: "Email")
+                    AppTextField(value: $SignUp_PostAPI.Password, Text_Field_Title: "Password")
+
                     
                     Spacer()
                     
+                    NavigationLink(destination: destinationView(for: .HomeInterface(selectedCategory: .constant("")))) {
                         AppButton(SignInUp: "Sign Up")
+                    }
                     
                     HStack{
                         Text("Don’t have an account?")

@@ -11,7 +11,7 @@ struct HomeInterface: View {
     @StateObject var viewModel = MangaViewModel()
     @State private var activeNavigation: NavigationDestination?
     @State private var isCurrentDestination: String = "HomeInterface"
-    
+        
     @Binding var selectedCategory: String
     
     

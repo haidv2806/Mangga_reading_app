@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SignIn: View {
+    @StateObject private var SignIn_PostAPI = SignInPostAPI()
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -21,8 +23,8 @@ struct SignIn: View {
                     
                     
                     
-                    AppTextField(Text_Field_Title: "Email")
-                    AppTextField(Text_Field_Title: "Password")
+                    AppTextField(value: $SignIn_PostAPI.Email, Text_Field_Title: "Email")
+                    AppTextField(value: $SignIn_PostAPI.Password, Text_Field_Title: "Password")
                     
                     Button(action: {}, label: {
                         Text("Forgot your password?")
@@ -32,10 +34,21 @@ struct SignIn: View {
                     
                     Spacer()
                     
-                        AppButton(SignInUp: "Sign In")
+                    if #available(iOS 15.0, *) {
+                        Button(action: {
+                            SignIn_PostAPI.submitData()
+                        }, label: {
+                            AppButton(SignInUp: "Sign In")
+                        })
+                        
+                        NavigationLink(destination: destinationView(for: .HomeInterface(selectedCategory: .constant(""))), isActive: $SignIn_PostAPI.IsUserLoggedIn) {
+                            EmptyView()
+                        }
+                    }
                     
                     HStack{
                         Text("Don’t have an account?")
+                        
                         
                         NavigationLink(destination: destinationView(for: .SignUp)) {
                             Text("Sign Up")
