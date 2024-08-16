@@ -8,18 +8,27 @@
 import SwiftUI
 
 struct UserImage: View {
-    let User_Image: UIImage
+    @State private var linkAvatar = UserDefaults.standard.string(forKey: "linkAvatar")
+    
     var body: some View {
-        Image(uiImage: User_Image)
-            .resizable()
-            .scaledToFill()
-            .aspectRatio(contentMode: .fill)
-            .clipShape(Circle())
-            
+        if #available(iOS 15.0, *) {
+            AsyncImage(url: URL(string: linkAvatar ?? "https://backend.phoenix.id.vn/accounts/profile/avatar.jpg")){ image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .aspectRatio(contentMode: .fill)
+                    .clipShape(Circle())
+            } placeholder: {
+                ProgressView()
+            }
+        } else {
+            // Fallback for earlier versions
+            Text("AsyncImage is only available on iOS 15 or newer.")
+        }
 
     }
 }
 
 #Preview {
-    UserImage(User_Image: UIImage(named: "Luffy") ?? UIImage())
+    UserImage()
 }

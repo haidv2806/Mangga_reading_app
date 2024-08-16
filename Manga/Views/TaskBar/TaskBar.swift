@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TaskBar: View {
-    let User_Image: String
     @Binding var navigationDestination: NavigationDestination?
     @Binding var isCurrentDestination: String
     
@@ -28,7 +27,7 @@ struct TaskBar: View {
                     .foregroundColor(isCurrentDestination == "Bookmark" ? .orange : .black)
             }
             NavigationLink(destination: destinationView(for: .UserProfile)) {
-                UserImage(User_Image: UIImage(named: User_Image) ?? UIImage())
+                UserImage()
                     .frame(width: 60, height: 60)
                     .padding(5)
                     .foregroundColor(isCurrentDestination == "Bookmark" ? .orange : .black)

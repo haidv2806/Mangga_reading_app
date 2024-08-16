@@ -32,7 +32,7 @@ struct HomeInterface: View {
                         }
 
                 
-                TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation, isCurrentDestination: $isCurrentDestination)
+                TaskBar(navigationDestination: $activeNavigation, isCurrentDestination: $isCurrentDestination)
                 if let activeNavigation = activeNavigation {
                     destinationView(for: activeNavigation)
                 }

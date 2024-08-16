@@ -13,12 +13,11 @@ struct ContentView: View {
     @State var selectedCategory: String = ""
     
     var body: some View {
-//        if isLogin {
-//            HomeInterface( selectedCategory: $selectedCategory)
-//        } else {
-//            SignIn()
-//        }
-        SignIn()
+        if isLogin {
+            HomeInterface( selectedCategory: $selectedCategory)
+        } else {
+            SignIn()
+        }
     }
 }
 

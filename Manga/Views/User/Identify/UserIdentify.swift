@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct UserIdentify: View {
-    let User_Image: String
-    let User_Name: String
+    @State private var userName = UserDefaults.standard.string(forKey: "userName")
+    
     var body: some View {
         HStack (spacing: 20){
-            UserImage(User_Image: UIImage(named: User_Image) ?? UIImage())
+            UserImage()
                 .frame(width: 150, height: 150)
             
-            Text(User_Name)
+            Text(userName ?? "User Name")
                 .font(.largeTitle)
                 .bold()
                 .padding([.top], 50)
@@ -25,5 +25,5 @@ struct UserIdentify: View {
 }
 
 #Preview {
-    UserIdentify(User_Image: "UserImg", User_Name: "Olivia Fate")
+    UserIdentify()
 }

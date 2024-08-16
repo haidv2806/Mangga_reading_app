@@ -27,7 +27,7 @@ struct UserProfile: View {
                 VStack{
                     //                Spacer(minLength: 130)
                     Spacer()
-                    UserIdentify(User_Image: "UserImg", User_Name: "Olivia Fate")
+                    UserIdentify()
                     
                     HStack {
                         Text("Favorite")
@@ -47,7 +47,7 @@ struct UserProfile: View {
                     
                     UserPostLlist()
                     
-                    TaskBar(User_Image: "UserImg", navigationDestination: $activeNavigation, isCurrentDestination: $isCurrentDestination)
+                    TaskBar(navigationDestination: $activeNavigation, isCurrentDestination: $isCurrentDestination)
                     if let activeNavigation = activeNavigation {
                         destinationView(for: activeNavigation)
                     }
