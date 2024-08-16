@@ -14,11 +14,4 @@ struct UserData: Codable{
     let ip_register: String
     let link_avatar: String
     let user_name: String
-    let password: String
 }
-
-//extension DefaultsKeys {
-//    static let email = DefaultsKey<String?>("email")
-//    static let password = DefaultsKey<String?>("password")
-//    static let islogin = DefaultsKey<Bool?>("islogin")
-//}

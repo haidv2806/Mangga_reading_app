@@ -9,9 +9,15 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @State private var isLogin = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+    @State var selectedCategory: String = ""
     
     var body: some View {
-		SignIn()
+        if isLogin {
+            HomeInterface( selectedCategory: $selectedCategory)
+        } else {
+            SignIn()
+        }
     }
 }
 

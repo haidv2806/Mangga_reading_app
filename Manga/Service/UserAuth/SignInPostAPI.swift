@@ -53,11 +53,10 @@ class SignInPostAPI: ObservableObject {
                         self.IsUserLoggedIn = true
                         print(self.IsUserLoggedIn)
                         
-//                        UserDefaults.standard.set(self.Email, forKey: "email")
-//                        UserDefaults.standard.set(self.Password, forKey: "password")
-//                        UserDefaults.standard.set(self.IsUserLoggedIn, forKey: "isUserLoggedIn")
-//                        print(UserDefaults.standard.dictionaryRepresentation())
-                        
+                        UserDefaults.standard.set(self.Email, forKey: "email")
+                        UserDefaults.standard.set(self.Password, forKey: "password")
+                        UserDefaults.standard.set(self.IsUserLoggedIn, forKey: "isUserLoggedIn")
+                        print(UserDefaults.standard.dictionaryRepresentation())
                     }
                     
                 } catch {
@@ -69,8 +68,6 @@ class SignInPostAPI: ObservableObject {
         task.resume()
     }
 }
-
-
 
 struct SignInResponse: Codable {
     let ketqua: String
