@@ -41,7 +41,6 @@
 		0864BD012C6B172E00CB8DBA /* SignInPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BD002C6B172E00CB8DBA /* SignInPostAPI.swift */; };
 		0864BD032C6B492C00CB8DBA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BD022C6B492C00CB8DBA /* UserData.swift */; };
 		0864BD052C6B4B3200CB8DBA /* SignUpPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864BD042C6B4B3200CB8DBA /* SignUpPostAPI.swift */; };
-		08BC29C02C6EF52C006676AC /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BC29BF2C6EF52C006676AC /* AuthUser.swift */; };
 		08BC29C32C6EF74B006676AC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 08BC29C22C6EF74B006676AC /* FirebaseAnalytics */; };
 		08BC29C52C6EF74B006676AC /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 08BC29C42C6EF74B006676AC /* FirebaseAnalyticsOnDeviceConversion */; };
 		08BC29C72C6EF74B006676AC /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 08BC29C62C6EF74B006676AC /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -66,6 +65,9 @@
 		08BC29ED2C6EF74B006676AC /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 08BC29EC2C6EF74B006676AC /* FirebaseStorageCombine-Community */; };
 		08BC29EF2C6EF74B006676AC /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 08BC29EE2C6EF74B006676AC /* FirebaseVertexAI-Preview */; };
 		08BC29F42C6EFB45006676AC /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = 08BC29F32C6EFB45006676AC /* SwiftyUserDefaults */; };
+		08BC29F92C6F0B7F006676AC /* IsUserOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BC29F82C6F0B7F006676AC /* IsUserOnline.swift */; };
+		08BC29FB2C6F2D3F006676AC /* Base64ToImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BC29FA2C6F2D3F006676AC /* Base64ToImage.swift */; };
+		08BC29FD2C6F2FCA006676AC /* ImageToBase64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BC29FC2C6F2FCA006676AC /* ImageToBase64.swift */; };
 		B403487E2A16380500621574 /* SplitNumberVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403487D2A16380500621574 /* SplitNumberVote.swift */; };
 		B40EE1192A1CC23000B17E78 /* VisualBlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */; };
 		B40EE1222A1E014800B17E78 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EE1212A1E014800B17E78 /* View.swift */; };
@@ -141,7 +143,9 @@
 		0864BD002C6B172E00CB8DBA /* SignInPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPostAPI.swift; sourceTree = "<group>"; };
 		0864BD022C6B492C00CB8DBA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		0864BD042C6B4B3200CB8DBA /* SignUpPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPostAPI.swift; sourceTree = "<group>"; };
-		08BC29BF2C6EF52C006676AC /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		08BC29F82C6F0B7F006676AC /* IsUserOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsUserOnline.swift; sourceTree = "<group>"; };
+		08BC29FA2C6F2D3F006676AC /* Base64ToImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64ToImage.swift; sourceTree = "<group>"; };
+		08BC29FC2C6F2FCA006676AC /* ImageToBase64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToBase64.swift; sourceTree = "<group>"; };
 		B403487D2A16380500621574 /* SplitNumberVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitNumberVote.swift; sourceTree = "<group>"; };
 		B40EE1182A1CC23000B17E78 /* VisualBlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurEffectView.swift; sourceTree = "<group>"; };
 		B40EE1212A1E014800B17E78 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -350,6 +354,14 @@
 			path = UserAuth;
 			sourceTree = "<group>";
 		};
+		08BC29F52C6F0B4B006676AC /* isUserOnline */ = {
+			isa = PBXGroup;
+			children = (
+				08BC29F82C6F0B7F006676AC /* IsUserOnline.swift */,
+			);
+			path = isUserOnline;
+			sourceTree = "<group>";
+		};
 		B403487C2A1637F000621574 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,7 +398,8 @@
 				0864BCEF2C6A036100CB8DBA /* GlowBorder.swift */,
 				0843AD0B2C5B3C5800991389 /* MangaClassify.swift */,
 				0864BD022C6B492C00CB8DBA /* UserData.swift */,
-				08BC29BF2C6EF52C006676AC /* AuthUser.swift */,
+				08BC29FA2C6F2D3F006676AC /* Base64ToImage.swift */,
+				08BC29FC2C6F2FCA006676AC /* ImageToBase64.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -419,6 +432,7 @@
 		B4C4FF0429F2781E00DE6433 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				08BC29F52C6F0B4B006676AC /* isUserOnline */,
 				0864BCFF2C6B16B900CB8DBA /* UserAuth */,
 				B4C4FF0529F2790000DE6433 /* MangaService.swift */,
 				B4C4FF0829F280DC00DE6433 /* MangaStore.swift */,
@@ -633,12 +647,12 @@
 				0843AD012C5A3FDA00991389 /* PaddingPosistion.swift in Sources */,
 				0864BD032C6B492C00CB8DBA /* UserData.swift in Sources */,
 				B43C84752A08D85A009B1810 /* CustomCorner.swift in Sources */,
+				08BC29F92C6F0B7F006676AC /* IsUserOnline.swift in Sources */,
 				0843AD232C5B889100991389 /* PreviewContentBar.swift in Sources */,
 				B43C84792A08D8A2009B1810 /* MangaDetailState.swift in Sources */,
 				F5B98B5D2A26F01200FAA867 /* MangaChapter.swift in Sources */,
 				0843ACFB2C5A347900991389 /* ColorForHex.swift in Sources */,
 				F518582229F78F0300DB7DBC /* MangaCardView.swift in Sources */,
-				08BC29C02C6EF52C006676AC /* AuthUser.swift in Sources */,
 				B40EE1192A1CC23000B17E78 /* VisualBlurEffectView.swift in Sources */,
 				0843AD112C5B648900991389 /* HomeTop.swift in Sources */,
 				F5B98C692A2C30C100FAA867 /* GridCategory.swift in Sources */,
@@ -655,7 +669,9 @@
 				B4EDF1422A08FDB600A51952 /* MangaDetail.swift in Sources */,
 				F5BD16E129F3F78400C8114D /* StubManga.swift in Sources */,
 				0843AD1F2C5B86B800991389 /* ReadNowButton.swift in Sources */,
+				08BC29FB2C6F2D3F006676AC /* Base64ToImage.swift in Sources */,
 				B4C4FF1229F29A1E00DE6433 /* LoadImage.swift in Sources */,
+				08BC29FD2C6F2FCA006676AC /* ImageToBase64.swift in Sources */,
 				B4D6CAA92A25E6AD00DFB7F2 /* MangaCategory.swift in Sources */,
 				0843ACF22C5A1F3A00991389 /* TaskBar.swift in Sources */,
 				B43C847D2A08D944009B1810 /* ActivityIndicatorView.swift in Sources */,

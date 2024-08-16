@@ -60,7 +60,7 @@ class SignInPostAPI: ObservableObject {
                         UserDefaults.standard.set(response.user.user_name, forKey: "userName")
                         UserDefaults.standard.set(response.user.link_avatar, forKey: "linkAvatar")
                         
-                        print(UserDefaults.standard.dictionaryRepresentation())
+//                        print(UserDefaults.standard.dictionaryRepresentation())
                     }
                     
                 } catch {

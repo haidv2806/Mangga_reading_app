@@ -10,17 +10,23 @@ import SwiftUI
 struct UserIdentify: View {
     @State private var userName = UserDefaults.standard.string(forKey: "userName")
     
+    
     var body: some View {
         HStack (spacing: 20){
-            UserImage()
-                .frame(width: 150, height: 150)
+            Button(action: {
+                
+                print("Tạo Avatar mới")
+                
+            }, label: {
+                UserImage()
+                    .frame(width: 150, height: 150)
+            })
             
             Text(userName ?? "User Name")
                 .font(.largeTitle)
                 .bold()
                 .padding([.top], 50)
         }
-//        .padding()
     }
 }
 

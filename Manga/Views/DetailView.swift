@@ -59,6 +59,7 @@ struct DetailView: View {
 			}
 			.task {
 				await viewModel.fetchDetailManga(link: link)
+                print(link)
 			}
 		} else {
 
